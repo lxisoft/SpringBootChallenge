@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Register</title>
+<title>Registering</title>
 </head>
 <body>
 
-<form action="/register">
+<form action="save.jsp">
 		<h3 style="font-family: TimesNewRoman;"></h3>
 		<center>
 			USERNAME: <input type="text" name="name"><br> 
@@ -21,5 +21,7 @@
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 	%>
+	
+	
 </body>
 </html>

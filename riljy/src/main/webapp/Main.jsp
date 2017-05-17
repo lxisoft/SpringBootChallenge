@@ -8,6 +8,6 @@
 </head>
 <body>
 
-<li><a href="register.jsp">Register</a></li>
+<li><a href="Register.jsp">Register</a></li>
 </body>
 </html>
