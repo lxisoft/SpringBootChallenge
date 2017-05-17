@@ -1,20 +1,23 @@
 package com.example;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name ="user")
 public class User {
-    int id;
-	
-	String name ;
-	int     age;
-	int phoneNumber;
+   
+	private int id;
+	private String name ;
+	private int age;
+	private int phoneNumber;
 	
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	public int getId() {
 		return id;
 	}
