@@ -7,7 +7,10 @@
 <title>REGISTERED USERS</title>
 </head>
 <body>
-
-<li><a href="Register.jsp">Register</a></li>
+ ....Registered Users...
+ 
+ 
+ 
+<a href="save.jsp">Register</a>
 </body>
 </html>

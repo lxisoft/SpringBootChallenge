@@ -11,11 +11,15 @@
 	<form action="/save" method=post>
 		ID<input type="text" name="id"><br>
 		NAME<input type="text" name="name"><br>
-		EMAIL<input type="text" name="email"></br>
-		 USERNAME<input type="text" name="username"></br> 
-		 PASSWORD<input type="text" name="password"></br>
+		EMAIL<input type="text" name="email"><br>
+		 USERNAME<input type="text" name="username"><br> 
+		 PASSWORD<input type="text" name="password"><br>
 
 		<input type="submit" name="button" value="save"> <br>
 	</form>
+ 	${message} 
+ 	${detail1}
+ 	${detail2}
+	
 </body>
 </html>
