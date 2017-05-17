@@ -11,8 +11,8 @@ public class HrServiceImpl implements HrService {
 	@Autowired
 	private HrRepo repo;
 
-	public Userdb save(Userdb details) {
+	public void save(Userdb details) {
 		// TODO Auto-generated method stub
-		return repo.save(details);
+		repo.save(details);
 	}
 }
