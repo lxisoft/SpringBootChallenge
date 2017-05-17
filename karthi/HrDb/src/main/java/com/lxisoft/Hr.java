@@ -12,22 +12,37 @@ public class Hr {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
-	private String userName;
+	private String username;
 	private String password;
+	private String email;
 	
-	/*@Lob
+	
+	@Lob
 	private byte[] image;
-	*/
 	
 	
-	public String getUserName() {
-		return userName;
+	
+	
+	public String getEmail() {
+		return email;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public byte[] getImage() {
+		return image;
+	}
+	public void setImage(byte[] image) {
+		this.image = image;
 	}
 	public String getPassword() {
 		return password;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public void setPassword(String password) {
 		this.password = password;

@@ -5,10 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Spring boot challenge</title>
-<form action="http://localhost:8080/register">
-<input type="text" name="username">
-<input type="text" name="password">
-<input type="submit" name="login">
+<form action="http://localhost:8080/register" enctype = "multipart/form-data">
+username:<input type="text" name="username">  <br />
+password:<input type="text" name="password">    <br />
+photo:<input type = "file" name = "file" />   <br />
+
+<input type="submit" name="save">
 </form>
 
 </head>
