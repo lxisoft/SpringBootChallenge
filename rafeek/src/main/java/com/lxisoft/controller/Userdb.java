@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 
 	@Entity
@@ -13,6 +14,26 @@ import javax.persistence.Id;
 		private int id=1;
 		private String username;
 		private String password;
+		@Lob
+		private byte[] file;
+		
+		@Lob
+		private byte[] pdf;
+
+		public byte[] getPdf() {
+			return pdf;
+		}
+
+		public void setPdf(byte[] pdf) {
+			this.pdf = pdf;
+		}
+		public void setFile(byte[] img) {
+			this.pdf = pdf;
+		}
+		public byte[] getFile() {
+			return file;
+		}
+		//private UserDetail UserDetail ;
 		public String getUsername() {
 			return username;
 		}
