@@ -7,17 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/saving">
-	<center>
-		NAME:<input type= "text" name="name"><br>
-		ADDRESS:<input type = "text" name="address"><br>
-		EMAIL-ID:<input type ="text" name ="emilId"><br>
-		PASSWORD:<input type = "password" name="password">
-		<input type="submit" name="submit" value = "SUBMIT">
-	
-	</center>
-
-</form>
-
+	${list}
 </body>
 </html>
