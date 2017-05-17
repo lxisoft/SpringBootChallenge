@@ -1,31 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Candidates</title>
+<title>Home</title>
 </head>
 <body>
-<h1>Candidates</h1>
+<center><br><br>
+	<a href="/register.jsp">Update profile</a>
+</center>
+<h1>	${user.getName()}</h1>
+	<br><br>
+<h1>	${user.getEmail()}</h1>
 	
+	<br><br>
 	
-	<c:forEach var="i" begin="1" end="${list.size()}">
-
- 		  ${i})	
- 		
- 		 <a href="/login.jsp?id=${list.get((i-1)).getId()}"> ${list.get((i-1)).getName()}</a>
- 		
- 		<br><br>
- 	
- 		
-	</c:forEach> 	 
-	
+	<img src="http://localhost:8080/getImage?id=${user.getId()}&count=12" width="200px" height="200px">
 	
 
 </body>
-
-
-
 </html>
