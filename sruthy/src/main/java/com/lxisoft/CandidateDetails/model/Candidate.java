@@ -12,13 +12,18 @@ public class Candidate {
 		@GeneratedValue
 		private int id;
 		
-		private String firstName;
+		private String name;
 
 		private String address;
 		
 		private String email;
 
 		private int phonenumber;
+		
+		private String userName;
+		
+		private String password;
+		
 
 		@Lob
 		private byte[] image;
@@ -40,11 +45,11 @@ public class Candidate {
 		}
 
 		public String getFirstName() {
-			return firstName;
+			return name;
 		}
 
 		public void setFirstName(String firstName) {
-			this.firstName = firstName;
+			this.name = firstName;
 		}
 
 		public String getAddress() {
@@ -69,6 +74,22 @@ public class Candidate {
 
 		public void setEmail(String email) {
 			this.email = email;
+		}
+
+		public String getPassword() {
+			return password;
+		}
+
+		public void setPassword(String password) {
+			this.password = password;
+		}
+
+		public String getUserName() {
+			return userName;
+		}
+
+		public void setUserName(String userName) {
+			this.userName = userName;
 		}
 
 		
