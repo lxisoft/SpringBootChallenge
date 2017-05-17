@@ -10,4 +10,5 @@ import com.lxisoft.CandidateDetails.model.Candidate;
 @Table(name ="candidate")
 public interface CandidateRepo extends JpaRepository<Candidate,Integer>{
 
+	
 }
