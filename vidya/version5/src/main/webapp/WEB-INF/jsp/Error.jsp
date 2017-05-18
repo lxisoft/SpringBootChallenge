@@ -4,13 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>REGISTERED USERS</title>
+<title>Insert title here</title>
 </head>
 <body>
- ....Registered Users...
- 
- 
- 
-<a href="save.jsp">Register</a>
+<h1>ERROR PAGE </h1>
+<a href="/home"> Try Again</a>
 </body>
 </html>

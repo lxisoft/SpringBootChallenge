@@ -24,10 +24,20 @@ public class Candidate {
 		
 		private String password;
 		
-
 		@Lob
 		private byte[] image;
 		
+		@Lob
+		private byte[] resume;
+		
+		public byte[] getResume() {
+			return resume;
+		}
+
+		public void setResume(byte[] resume) {
+			this.resume = resume;
+		}
+
 		public byte[] getImage() {
 			return image;
 		}
@@ -44,13 +54,7 @@ public class Candidate {
 			this.id = id;
 		}
 
-		public String getFirstName() {
-			return name;
-		}
-
-		public void setFirstName(String firstName) {
-			this.name = firstName;
-		}
+		
 
 		public String getAddress() {
 			return address;
@@ -90,6 +94,14 @@ public class Candidate {
 
 		public void setUserName(String userName) {
 			this.userName = userName;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
 		}
 
 		
