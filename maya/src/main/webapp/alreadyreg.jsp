@@ -1,8 +1,7 @@
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <c:forEach var="applicant" items="${user}">
-NAME: ${applicant.getUsername()}<br>
-PASSWORD: ${applicant.getPassword()}<br>
+<a href="http://localhost:8080/personaldata/<c:out value="${applicant.getUsername()}"/>">${applicant.getUsername()}<br>
 </c:forEach>
 
 </html>

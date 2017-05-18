@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>REGISTERED USERS</title>
+<title>Candidate</title>
 </head>
 <body>
- ....Registered Users...
- 
- 
- 
-<a href="save.jsp">Register</a>
-</body>
+
+	NAME: 
+	ADDRESS:
+		
+	</body>
 </html>
