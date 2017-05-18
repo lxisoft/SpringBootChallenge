@@ -8,7 +8,7 @@
 <form action="/login" >
 
 <br><br>
-<a href="login.jsp">Secure</a>
+<a href="registration.jsp">Secure</a>
 <a href="list.jsp">UnSecure</a>
 
 
