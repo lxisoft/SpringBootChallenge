@@ -7,16 +7,19 @@
 <title>Candidate</title>
 </head>
 <body>
-<form action="/saving">
-		<h3 style="font-family: TimesNewRoman;"></h3>
+<form action="/saving"  method="post" enctype="multipart/form-data">
 		<center>
-			NAME: <input type="text" name="name"><br>
+		<h3 style="font-family: TimesNewRoman;"></h3>
+		REGISTRATION FORM <br><br>
+			NAME:    <input type="text" name="name"><br>
 			ADDRESS: <input type="text" name="address"><br> 
-			EMAIL: <input type="text" name="email"><br> 
-			PHONENUM: <input type="text" name="phonenumber"><br>
-			USERNAME: <input type="text" name="userName"><br> 
-			PASSWORD: <input type="password" name="password"><br> 
-			<input type="submit" name="button" value="SUBMIT">
+			EMAIL:   <input type="text" name="email"><br> 
+			PHONENUM:<input type="text" name="phonenumber"><br>
+			USERNAME:<input type="text" name="userName"><br> 
+			PASSWORD:<input type="password" name="password"><br> 
+			IMAGE:   <input type="file" name="image"><br> 
+			RESUME:  <input type="file" name="resume"><br><br>
+			       <input type="submit" name="button" value="SUBMIT">
 
 		</center>
 	</form>
