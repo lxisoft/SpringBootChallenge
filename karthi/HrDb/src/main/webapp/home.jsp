@@ -9,7 +9,7 @@
 
 <br><br>
 <a href="registration.jsp">Secure</a>
-<a href="list.jsp">UnSecure</a>
+<a href="http://localhost:8080/findbyname">UnSecure</a>
 
 
 
