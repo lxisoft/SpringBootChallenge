@@ -1,0 +1,94 @@
+   
+     ul {
+		
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+		}
+
+	li {
+       list-style: none;
+	    float:right;
+		}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 25px 50px;
+	    text-decoration: none;
+	    background-color: black;
+	}
+
+	li a:hover:not(.active) {
+	    background-color:brown;
+	}
+	
+	table
+    {
+        width:6%;
+    }
+    
+     tr
+    {
+        height: 1px;
+        width: 10%;
+        text-align: center;
+        border:black; 
+        background-color:#f2f2f2;
+    }
+    td{
+    padding: 28px 80px;
+    }
+       
+   div
+    {
+        position: absolute;
+        top:11%;
+        width: 98.9%;
+        height: 160%;
+        background-color: orange;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+   
+                  
+    } 
+    
+    @keyframes example {
+    0%   {background-color: orange;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    100% {background-color: orange;}
+}
+
+.pagination {
+    display: inline-block;
+    top:38%;
+    left:39%;
+    width: 50%;
+    height: 70%;
+    
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    left:30%;
+
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 22px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: green;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+     
+ 

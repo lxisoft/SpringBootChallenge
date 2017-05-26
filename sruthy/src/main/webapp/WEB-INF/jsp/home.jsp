@@ -1,35 +1,69 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+     
+     ul {
+		
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+		}
+
+	li {
+       list-style: none;
+	    float:right;
+		}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 25px 50px;
+	    text-decoration: none;
+	    background-color: black;
+	}
+
+	li a:hover:not(.active) {
+	    background-color:brown;
+	}
+	   
+      div
+    {
+        position: absolute;
+        top:11%;
+        width: 98.8%;
+    height: 160%;
+    background-color: orange;
+   animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+                  
+    }
+    
+    @keyframes example {
+    0%   {background-color: orange;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    100% {background-color: orange;}
+}
+     
+    </style>
+    </head>
 <title>HOME PAGE</title>
-</head>
-<body><br><br><br><br>
-<center>
 
-<c:choose>
-	<c:when test="${list.size()==0}">
-		<% out.println("NO REGISTERED USERS");%>
-	</c:when>
+<body>
+<ul>
+	<li><a href="/home">HR</a></li>
+        
+        <li><a href="/userlist/1">USERLIST</a></li>
+        
+        <li><a href="/register">REGISTER</a></li>
+		
+	</ul><div></div>
 
-	<c:otherwise><table>
-		<c:forEach var="i" items="${list}">
-		<tr><td><a href="/loginpage">${i.getName()}</a></td></tr>
-		</c:forEach>
-		</table>
-	</c:otherwise>
-</c:choose>
-
-<form action="/register"><br><br>
-   NOT REGISTERED YET???
-   <br><br>
-	<input type="submit" name="button" value="REGISTER">
-</form>
-
-</center>
 
 </body>
 </html>
